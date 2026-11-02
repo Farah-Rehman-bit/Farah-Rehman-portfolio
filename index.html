@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fr | Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Lilly, a computer science student building websites and automation projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+  
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) { }
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Farah</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button id="themeToggle" class="icon-btn" aria-label="Switch to dark theme" type="button">◐</button>
+      <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"
+        type="button">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="hello">Hi, I’m Farah.</p>
+        <h1>Code that looks great and works even better.</h1>
+        <p class="lead">I’m a computer science student who loves turning ideas into things people can use, from polished
+          websites to automation that thinks for itself.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap section">
+      <h2>About me</h2>
+      <div class="two-col">
+        <p>I’m a computer science student who likes making things that actually work, whether that’s a page that fits
+          every screen or a circuit that reacts to the real world.</p>
+        <p>I’m currently deepening my web development skills through the SMIT program, and I practise spoken English
+          daily so I can explain my work clearly to anyone.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Front end</h3>
+          <p>HTML5, CSS3 (Flexbox and Grid), JavaScript ES6+</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, Vercel / GitHub Pages</p>
+        </div>
+        <div class="card">
+          <h3>Electronics</h3>
+          <p>Sensors, microcontroller projects, basic automation</p>
+        </div>
+        <div class="card">
+          <h3>Communication</h3>
+          <p>Technical explanation, spoken English practice</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap section">
+      <h2>Featured projects</h2>
+      <div class="projects">
+        <article class="card project">
+          <h3>Mysteries of Ancient Egypt</h3>
+          <p>A multi-page website exploring pyramids, pharaohs and mysteries.</p>
+          <button class="btn small" type="button" data-title="Mysteries of Ancient Egypt"
+            data-text="A multi-page website about Ancient Egypt with a video hero, pages for the pyramids, pharaohs, mysteries, gallery and timeline, a statistics section and a newsletter sign-up area. Built to practise structuring a larger site with consistent navigation."
+            data-tech="HTML5, CSS3, Multi-page navigation"
+            data-link="https://farah-rehman-bit.github.io/ancient-egypt-website/">View live site</button>
+        </article>
+        <article class="card project">
+          <h3>Spider-Man Fan Website</h3>
+          <p>A bold, responsive fan site with a powers section and image gallery.</p>
+          <button class="btn small" type="button" data-title="Spider-Man Fan Website"
+            data-text="A responsive one-page Spider-Man fan website with a hero banner, an about section, four power cards (Super Strength, Web Slinging, Spider Sense and Wall Crawling) and a gallery. Built to practise layout, styling and smooth in-page navigation."
+            data-tech="HTML5, CSS3" data-link="https://farah-rehman-bit.github.io/spider-man-clone-website/">View live
+            site</button>
+        </article>
+
+        <article class="card project">
+          <h3>Automatic Car Decision System</h3>
+          <p>A system that makes driving decisions automatically.</p>
+          <button class="btn small" type="button" data-title="Automatic Car Decision System"
+            data-text="A project where a car makes decisions on its own based on what it senses. Replace this text with how it works, the sensors and code you used, and what you learned."
+            data-tech="Sensors, Microcontroller, Decision logic"
+            data-link="https://github.com/farah-rehman-bit/Automatic-Car-Decision-System">View details</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="wrap section">
+      <h2>Resume</h2>
+      <ul class="resume">
+        <li><strong>Education:</strong> BS Computer Science (SBBWU)</li>
+        <li><strong>Training:</strong> Web development program, SMIT</li>
+        <li><strong>Projects:</strong> Mysteries of Ancient Egypt, Spider-Man Fan Website, Automatic Car Decision
+          System, players-scores, Rado-website-task </li>
+      </ul>
+      <a class="btn" href="resume.pdf" download>Download resume (PDF)</a>
+    </section>
+
+    <section id="contact" class="wrap section">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hello? Reach me here.</p>
+      <ul class="links">
+        <li><a href="mailto:mkdone7295@gmail.com">mkdone7295@gmail.com</a></li>
+        <li><a href="https://github.com/Farah-Rehman-bit" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/farah-rehman-0a595a392" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© <span id="year">2026</span>  Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="mTitle">
+    <h3 id="mTitle"></h3>
+    <p id="mText"></p>
+    <p class="tech"><strong>Built with:</strong> <span id="mTech"></span></p>
+    <div class="actions">
+      <a id="mLink" class="btn primary" href="#" target="_blank" rel="noopener">View source on GitHub</a>
+      <button id="mClose" class="btn" type="button">Close</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
